@@ -3,7 +3,7 @@
 # Example:
 #
 # box['/assets/'].files_flattened.select { |f| f.size > 10.mb }
-class Fixnum
+class Integer
   def kb
     self * 1024
   end

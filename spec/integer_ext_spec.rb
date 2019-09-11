@@ -1,6 +1,6 @@
 require_relative 'base'
 
-describe Fixnum do
+describe Integer do
 	before do
 		@num = 2
 	end

@@ -38,7 +38,7 @@ Gem::Specification.new do |s|
     "lib/rush/exceptions.rb",
     "lib/rush/file.rb",
     "lib/rush/find_by.rb",
-    "lib/rush/fixnum_ext.rb",
+    "lib/rush/integer_ext.rb",
     "lib/rush/head_tail.rb",
     "lib/rush/local.rb",
     "lib/rush/path.rb",
@@ -59,7 +59,7 @@ Gem::Specification.new do |s|
     "spec/entry_spec.rb",
     "spec/file_spec.rb",
     "spec/find_by_spec.rb",
-    "spec/fixnum_ext_spec.rb",
+    "spec/integer_ext_spec.rb",
     "spec/local_spec.rb",
     "spec/path_spec.rb",
     "spec/process_set_spec.rb",
@@ -108,4 +108,3 @@ Gem::Specification.new do |s|
     s.add_dependency(%q<rspec>, [">= 0"])
   end
 end
-

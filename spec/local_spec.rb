@@ -246,7 +246,7 @@ describe Rush::Connection::Local do
   end
 
   it "stat fetches the octal permissions" do
-    expect(@con.stat(@sandbox_dir)[:mode]).to be_kind_of(Fixnum)
+    expect(@con.stat(@sandbox_dir)[:mode]).to be_kind_of(Integer)
   end
 
   it "stat raises DoesNotExist if the entry does not exist" do

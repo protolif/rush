@@ -28,9 +28,12 @@ describe Rush::Shell do
  end
 
  it 'Complete paths' do
-   expect(@shell.complete('root["bin/ba')).to  eq ["root[\"bin/bash"]
-   expect(@shell.complete('root[\'bin/ba')).to eq ["root['bin/bash"]
-   expect(@shell.complete('root/"bin/ba')).to  eq ["root/\"bin/bash"]
-   expect(@shell.complete('root/\'bin/ba')).to eq ["root/'bin/bash"]
+	 # Updated: 9/11/2019 by @protolif
+	 # Details: Changed eq to include
+	 # Reason: 'bin/ba' matches more than 'bin/bash' on many systems
+   expect(@shell.complete('root["bin/ba')).to  include "root[\"bin/bash"
+   expect(@shell.complete('root[\'bin/ba')).to include "root['bin/bash"
+   expect(@shell.complete('root/"bin/ba')).to  include "root/\"bin/bash"
+   expect(@shell.complete('root/\'bin/ba')).to include "root/'bin/bash"
  end
 end
