@@ -1,6 +1,6 @@
 source "http://rubygems.org"
 
-ruby '2.6.1'
+ruby '~> 2.6.1'
 
 gem 'session', '~> 3.2'
 gem 'coolline', '~> 0.5.0'
